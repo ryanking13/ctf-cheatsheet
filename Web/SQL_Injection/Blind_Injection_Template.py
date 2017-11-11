@@ -36,11 +36,11 @@ for idx in range(0, flag_len):
         s = time.time()
 
         if request_type == 'GET':
-            response = requests.get(url=url, headers=cookie, params=payload)
+            response = requests.get(url=url, cookies=cookie, params=payload)
         elif request_type == 'POST':
-            response = requests.post(url=url, headers=cookie, data=payload)
+            response = requests.post(url=url, cookies=cookie, data=payload)
         elif request_type == 'JSON':
-            response = requests.post(url=url, headers=cookie, json=payload)
+            response = requests.post(url=url, cookies=cookie, json=payload)
 
         e = time.time()
 
