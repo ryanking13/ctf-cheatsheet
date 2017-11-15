@@ -20,3 +20,8 @@ SELECT * FROM table WHERE condition procedure analyse()
 ```sql
 select * from mysql.innodb_table_stats where database_name=schema()
 ```
+
+
+#### TOBEUPDATED
+
+- https://blog.pagez.kr/2015/04/19/another-error-based-sql-injection-on-mysql.html
