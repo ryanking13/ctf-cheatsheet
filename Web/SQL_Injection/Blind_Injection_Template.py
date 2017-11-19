@@ -26,6 +26,7 @@ check_time = 2
 cookie = {session_name: session}
 flag = ''
 for idx in range(0, flag_len):
+    chk = True
     for c in candidate:
 
         payload = {
@@ -55,6 +56,10 @@ for idx in range(0, flag_len):
             if check_string in r:
                 print(idx, c)
                 flag += c
+                chk = False
                 break
+
+    if chk:
+        print("Not found:", idx)
 
 print(flag)
