@@ -21,6 +21,13 @@ SELECT * FROM table WHERE condition procedure analyse()
 select * from mysql.innodb_table_stats where database_name=schema()
 ```
 
+### SQLite
+
+- sqlite_master table [FAQ](https://www.sqlite.org/faq.html#q7)
+
+```sql
+SELECT name, sql FROM sqlite_master WHERE type='table' ORDER BY name;
+```
 
 #### TOBEUPDATED
 
